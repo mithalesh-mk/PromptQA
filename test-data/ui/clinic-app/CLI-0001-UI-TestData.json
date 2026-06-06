@@ -1,0 +1,39 @@
+{
+    "TC-0001":{
+        "TestCaseID": "TC-0001",
+        "TestCaseDescription": "Verify that the user can successfully Navigate to MediBook page",
+        "Preconditions": "The user has a valid account and is on the login page.",
+        "TestSteps": [
+            "Navigate to the login page.",
+            "Enter valid username and password.",
+            "Click on the login button.",
+            "Wait for the dashboard to load.",
+            "Click on Open Clinic App button."
+        ],
+        "ExpectedResult": "The user should be successfully logged in and redirected to the dashboard.",
+        "ActualResult": "",
+        "Status": ""
+    },
+    "TC-0002":{
+        "TestCaseID": "TC-0002",
+        "TestCaseDescription": "Verify that the user can search for a doctor using the search functionality",
+        "Preconditions": [
+            "The user is logged in and on the dashboard.",
+            "The search functionality is available on the dashboard."
+        ],
+        "TestSteps": [
+            "Click on the search bar.",
+            "Enter the name of a doctor (e.g., 'Dr. Smith').",
+            "Press the search button or hit enter.",
+            "Wait for the search results to load."
+        ],
+        "TestData":{
+            "DoctorName": "Arjun",
+            "ExpectedDoctorName": "Dr. Arjun Kapoor"
+
+        },
+        "ExpectedResult": "The user should be successfully logged in and redirected to the dashboard.",
+        "ActualResult": "",
+        "Status": "Pass"
+    }
+}

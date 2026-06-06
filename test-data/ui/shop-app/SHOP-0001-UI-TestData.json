@@ -1,0 +1,36 @@
+{
+    "TC-0001": {
+        "Module": "SHOP-0001",
+        "TestCaseID": "TC-0001",
+        "TestDescription": "User should be able to search for a product.",
+        "Preconditions": "User is on the Shop App.",
+        "TestSteps": [
+            "1. Enter 'Laptop' in the search bar.",
+            "2. Click on the search button."
+        ],
+        "TestData": {
+            "SearchTerm": "Smart Watch",
+            "ExpectedProductName": "Smart Watch"
+        },
+
+        "ExpectedResult": "Search results for 'Laptop' should be displayed.",
+        "ActualResult": "Search results for 'Laptop' are displayed.",
+        "Status": "Pass"
+    },
+    "TC-0002": {
+        "Module": "SHOP-0001",
+        "TestCaseID": "TC-0002",
+        "TestDescription": "User should be able to add a product to the cart.",
+        "Preconditions": "User is on the Shop App and has searched for a product.",
+        "TestSteps": [
+            "1. Click on the 'Add to Cart' button for the first product in the search results."
+        ],
+        "TestData": {
+            "SearchTerm": "Basketball",
+            "ExpectedMessage": "No products match your filters."
+        },
+        "ExpectedResult": "'Smart Watch' should be added to the cart.",
+        "ActualResult": "'Smart Watch' is added to the cart.",
+        "Status": "Pass"
+    }
+}
