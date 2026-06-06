@@ -28,11 +28,6 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
-      - name: Count Allure Attachments
-        run: |
-          find allure-results -name "*.png" | wc -l
-          find allure-results -name "*.png"
-
       - name: Clean Allure Results
         run: |
           rm -rf allure-results
